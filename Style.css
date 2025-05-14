@@ -1,0 +1,12 @@
+.special{
+	align-items : center ; display : flex ; justify-content : space-between ;
+}
+
+
+#align{
+	text-align: center ;
+	margin: 0 300px;
+}
+h1{
+	text-align: center; 
+}

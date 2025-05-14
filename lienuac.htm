@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=b25vAXl0M4FP-VozWWtKE6yhxeq-HMH2pxr9UOxe16l0rB4hc6tvPBzHa1GdXsGPmjonnIpXEpuqQS9U_tAMU_ldBSNcbwRDc-N5KPPIIuYhMzx-YPeBiwOSHEKtRq6LP2XwD0qkZ9gb_DDW28j2vKrgvH6bhYnw5uKaYOXTbqLJLE0LnHkhklH-mkRY29Zl0oPa48WoLkXsl3NnXJjq7Bdzgq7avFX5dT_N4A1vfY8EkL3znr5QTk-CmEtjH7iOz3CYM5KqkzLIxVGPRkKnIaqKPT-auPiJMUcvWCsdPmSyLHfkAeuTY-B7UCvOl8BOZBzxlKyNjDdCpqaTaGB7qQ" charset="UTF-8"></script><script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "https://etudiant.uac.bj/";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com/ck/a?!&&p=2c05b84e716b1ac3b27daa4e5905cf1439015ad708f5a664bce9c944e45ef3feJmltdHM9MTc0NDI0MzIwMA&ptn=3&ver=2&hsh=4&fclid=38d4c1c8-f834-6ae3-20a1-d53df9736b0e&psq=uac.bj&u=a1aHR0cHM6Ly9ldHVkaWFudC51YWMuYmov&ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>
